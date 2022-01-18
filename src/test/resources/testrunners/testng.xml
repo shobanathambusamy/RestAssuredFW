@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Rest API Test Suite" verbose="1" parallel="tests"
+	thread-count="3">
+	
+	<listeners>
+		<!-- <listener class-name="com.qa.api.gorest.listeners.ExtentReportListener" 
+			/> <listener class-name="com.qa.api.gorest.listeners.AllureReportListener" 
+			/> -->
+		<listener class-name="com.qa.api.lms.listeners.AlluerReportListener" />
+	</listeners>
+
+	
+	<test name="Rest API regression Test" parallel="classes"
+		thread-count="3" preserve-order="true">
+		<classes>
+		
+            <class name="com.qa.api.lms.tests.BasicAuthConfigTest"/> 	
+			<class name="com.qa.api.lms.tests.GetProgramsTest" />
+			<class name="com.qa.api.lms.tests.CreateProgramTest" />
+			<class name="com.qa.api.lms.tests.UpdateProgramTest" />
+			<class name="com.qa.api.lms.tests.DeleteProgramTest" />
+
+
+		</classes>
+		
+		
+	</test>
+</suite>

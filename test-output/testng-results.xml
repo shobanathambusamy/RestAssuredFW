@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Rest API Test Suite" duration-ms="19377" started-at="2021-12-23T17:04:49 PST" finished-at="2021-12-23T17:05:09 PST">
+    <groups>
+      <group name="init">
+        <method signature="BasicAuthConfigTest.getCredentialsFromDP(org.testng.ITestContext,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.lms.tests.BasicAuthConfigTest@1b9ea3e3]" name="getCredentialsFromDP" class="com.qa.api.lms.tests.BasicAuthConfigTest"/>
+      </group> <!-- init -->
+    </groups>
+    <test name="Rest API regression Test" duration-ms="19377" started-at="2021-12-23T17:04:49 PST" finished-at="2021-12-23T17:05:09 PST">
+      <class name="com.qa.api.lms.tests.DeleteProgramTest">
+        <test-method status="PASS" signature="getCredentials(org.testng.ITestContext)[pri:0, instance:com.qa.api.lms.tests.DeleteProgramTest@62f87c44]" name="getCredentials" is-config="true" duration-ms="1" depends-on-groups="init" started-at="2021-12-23T17:05:05 PST" finished-at="2021-12-23T17:05:05 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f90bbbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentials -->
+        <test-method status="PASS" signature="deleteProgramTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.DeleteProgramTest@62f87c44]" name="deleteProgramTest" duration-ms="1633" depends-on-groups="init" started-at="2021-12-23T17:05:05 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:07 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProgramTest -->
+        <test-method status="PASS" signature="deleteProgramTest_ProgramNotAvailable(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.DeleteProgramTest@62f87c44]" name="deleteProgramTest_ProgramNotAvailable" duration-ms="2093" depends-on-groups="init" started-at="2021-12-23T17:05:07 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:09 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProgramTest_ProgramNotAvailable -->
+      </class> <!-- com.qa.api.lms.tests.DeleteProgramTest -->
+      <class name="com.qa.api.lms.tests.UpdateProgramTest">
+        <test-method status="PASS" signature="getCredentials(org.testng.ITestContext)[pri:0, instance:com.qa.api.lms.tests.UpdateProgramTest@3676ac27]" name="getCredentials" is-config="true" duration-ms="7" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" finished-at="2021-12-23T17:04:57 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f90bbbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentials -->
+        <test-method status="PASS" signature="updateProgramTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.UpdateProgramTest@3676ac27]" name="updateProgramTest" duration-ms="8107" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:05 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProgramTest -->
+      </class> <!-- com.qa.api.lms.tests.UpdateProgramTest -->
+      <class name="com.qa.api.lms.tests.BasicAuthConfigTest">
+        <test-method status="PASS" signature="getCredentialsFromDP(org.testng.ITestContext,java.lang.String,java.lang.String)[pri:0, instance:com.qa.api.lms.tests.BasicAuthConfigTest@1b9ea3e3]" name="getCredentialsFromDP" duration-ms="316" started-at="2021-12-23T17:04:51 PST" data-provider="getAuthCredentials" finished-at="2021-12-23T17:04:51 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f90bbbc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentialsFromDP -->
+        <test-method status="PASS" signature="getAllPrograms_WithNoAuthTest()[pri:0, instance:com.qa.api.lms.tests.BasicAuthConfigTest@1b9ea3e3]" name="getAllPrograms_WithNoAuthTest" duration-ms="4944" started-at="2021-12-23T17:04:52 PST" finished-at="2021-12-23T17:04:57 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPrograms_WithNoAuthTest -->
+      </class> <!-- com.qa.api.lms.tests.BasicAuthConfigTest -->
+      <class name="com.qa.api.lms.tests.GetProgramsTest">
+        <test-method status="PASS" signature="getCredentials(org.testng.ITestContext)[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getCredentials" is-config="true" duration-ms="7" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" finished-at="2021-12-23T17:04:57 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f90bbbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentials -->
+        <test-method status="PASS" signature="getAllProgramsTest()[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getAllProgramsTest" duration-ms="6456" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" finished-at="2021-12-23T17:05:03 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllProgramsTest -->
+        <test-method status="PASS" signature="getAllPrograms_WithInvalidURLTest()[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getAllPrograms_WithInvalidURLTest" duration-ms="894" depends-on-groups="init" started-at="2021-12-23T17:05:03 PST" finished-at="2021-12-23T17:05:04 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPrograms_WithInvalidURLTest -->
+        <test-method status="PASS" signature="getProgramById(int)[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getProgramById" duration-ms="577" depends-on-groups="init" started-at="2021-12-23T17:05:04 PST" data-provider="getData" finished-at="2021-12-23T17:05:05 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3521]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProgramById -->
+        <test-method status="PASS" signature="getProgramById_ProgramNotAvailable(int)[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getProgramById_ProgramNotAvailable" duration-ms="521" depends-on-groups="init" started-at="2021-12-23T17:05:05 PST" data-provider="getProgramNotAvailableData" finished-at="2021-12-23T17:05:05 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3523]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProgramById_ProgramNotAvailable -->
+        <test-method status="PASS" signature="getProgramByZeroId_Test()[pri:0, instance:com.qa.api.lms.tests.GetProgramsTest@287f94b1]" name="getProgramByZeroId_Test" duration-ms="631" depends-on-groups="init" started-at="2021-12-23T17:05:05 PST" finished-at="2021-12-23T17:05:06 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProgramByZeroId_Test -->
+      </class> <!-- com.qa.api.lms.tests.GetProgramsTest -->
+      <class name="com.qa.api.lms.tests.CreateProgramTest">
+        <test-method status="PASS" signature="getCredentials(org.testng.ITestContext)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="getCredentials" is-config="true" duration-ms="1" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" finished-at="2021-12-23T17:04:57 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f90bbbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCredentials -->
+        <test-method status="PASS" signature="createProgramTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="createProgramTest" duration-ms="7034" depends-on-groups="init" started-at="2021-12-23T17:04:57 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:04 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProgramTest -->
+        <test-method status="PASS" signature="createProgramWithExistingIdTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="createProgramWithExistingIdTest" duration-ms="2551" depends-on-groups="init" started-at="2021-12-23T17:05:04 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:06 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProgramWithExistingIdTest -->
+        <test-method status="PASS" signature="createProgramWithInvalidProgramNameAsEmptyTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="createProgramWithInvalidProgramNameAsEmptyTest" duration-ms="526" depends-on-groups="init" started-at="2021-12-23T17:05:06 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:07 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProgramWithInvalidProgramNameAsEmptyTest -->
+        <test-method status="PASS" signature="createProgramWithInvalidProgramNameAsNullTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="createProgramWithInvalidProgramNameAsNullTest" duration-ms="524" depends-on-groups="init" started-at="2021-12-23T17:05:07 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:07 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProgramWithInvalidProgramNameAsNullTest -->
+        <test-method status="PASS" signature="createProgramWithNullValuesForProgramDecriptionTest(int,java.lang.String,java.lang.String,boolean)[pri:0, instance:com.qa.api.lms.tests.CreateProgramTest@5489c777]" name="createProgramWithNullValuesForProgramDecriptionTest" duration-ms="1177" depends-on-groups="init" started-at="2021-12-23T17:05:07 PST" data-provider="getProgramData" finished-at="2021-12-23T17:05:09 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data Science]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data science certification]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProgramWithNullValuesForProgramDecriptionTest -->
+      </class> <!-- com.qa.api.lms.tests.CreateProgramTest -->
+    </test> <!-- Rest API regression Test -->
+  </suite> <!-- Rest API Test Suite -->
+</testng-results>

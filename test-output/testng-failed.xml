@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Rest API Test Suite]" parallel="tests">
+  <test thread-count="3" name="Rest API regression Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.api.lms.config.BasicAuthConfigTest">
+        <methods>
+          <include name="getCredentialsFromDP"/>
+        </methods>
+      </class> <!-- com.qa.api.lms.config.BasicAuthConfigTest -->
+      <class name="com.qa.api.lms.tests.GetProgramsTest">
+        <methods>
+          <include name="getCredentials"/>
+          <include name="getProgramByZeroId_Test"/>
+        </methods>
+      </class> <!-- com.qa.api.lms.tests.GetProgramsTest -->
+    </classes>
+  </test> <!-- Rest API regression Test(failed) -->
+</suite> <!-- Failed suite [Rest API Test Suite] -->
