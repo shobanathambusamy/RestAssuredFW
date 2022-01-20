@@ -14,7 +14,7 @@ public class ExcelUtil {
 	public static Workbook book;
 	public static Sheet sheet;
 	
-	public static String TESTDATA_FILE_PATH = "/Users/shobana/2021javaworkspace/NAL/LMSAPIFW/src/main/java/com/qa/api/lms/testdata/LMSData.xlsx";
+	public static String TESTDATA_FILE_PATH = "./src/main/java/com/qa/api/lms/testdata/LMSData.xlsx";
 
 
 	
